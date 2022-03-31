@@ -1,6 +1,8 @@
 # Tic-Tac-Toe-Game
 
 ![Code quality score](https://api.codiga.io/project/32266/score/svg)
+![Quality grade](https://api.codiga.io/project/32266/status/svg)
+
 - Tic-Tac-Toe 2-player game using basic C functions.
 - User will get two options to either start game or view the LeaderBoard.
 - On pressing 1, users can enter their usernames,afterwhich player1 will be allowed to choose ```X``` or ```0``` and then the users enter the gaming area to make moves using numeric keypad.
