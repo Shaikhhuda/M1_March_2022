@@ -14,8 +14,7 @@ int main()
     system("color 09");
     int player=1;
     int choice,score=-1;
-    char symbol,re;
-    char start,dec;
+    char symbol;
     int s;
     rules();
     printf("\n\nType 1 to start the game:-\nType 2 to view leader board:-\n");
@@ -25,10 +24,10 @@ int main()
     read:
         p=fopen("score.txt","a+");
     printf("\nEnter name of player1: ");
-    scanf("%s",u1);
+    scanf("%4s",u1);
     fprintf(p,"\n%s",u1);
     printf("Enter name of player2: ");
-    scanf("%s",u2);
+    scanf("%4s",u2);
     fprintf(p,"\t%s",u2);
     fclose(p);
     if(!strcmp(u1,u2))
@@ -149,8 +148,6 @@ int checkforwin()
 
 void board()
 {
-    int i;
-
     system("cls");
     printf("\tTic-Tac-Toe\n\n");
         printf("\n\n");
@@ -168,7 +165,6 @@ void board()
     }
 void rules()
 {
-    char link;
     printf("\tWelcome to the Tic-Tac-Toe fun game\n\n");
     printf("Rules:-\n");
     printf("\n1:Each player will be entering the number to put respective X or O in the desired position");
